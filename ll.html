@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorine | Maison de Prestige</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-top">
+      <div class="logo">LORINE</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Rechercher une pièce d'exception...">
+        <button>Rechercher</button>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+        <div class="cart-box">
+          🛒 <span id="cart-count">0</span> | <strong id="total-price">0</strong>€
+        </div>
+      </div>
+    </div>
+    <ul class="nav-bottom">
+      <li><a href="#gallery">Collection</a></li>
+      <li><a href="#">Maroquinerie</a></li>
+      <li><a href="#">Horlogerie</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>L'Héritage de l'Élégance</h1>
+        <p>Bienvenue chez <strong>Lorine</strong>. Une sélection raffinée pour une clientèle d'exception.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="gallery">
+    <h2 class="section-title">Nos Articles de Prestige</h2>
+    <div class="gallery-grid" id="product-grid">
+      </div>
+  </main>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Service Clientèle</h2>
+      <form class="contact-form" id="contact-form">
+        <input type="text" placeholder="Votre Nom" required>
+        <input type="email" placeholder="Votre Email" required>
+        <textarea placeholder="Votre message..." rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
